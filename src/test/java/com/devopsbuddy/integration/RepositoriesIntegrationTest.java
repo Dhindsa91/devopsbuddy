@@ -15,7 +15,9 @@ import com.devopsbuddy.enums.RolesEnum;
 import com.devopsbuddy.utils.UsersUtils;
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.TestName;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -46,7 +48,8 @@ public class RepositoriesIntegrationTest {
     private UserRepository userRepository;
 
 
-
+    @Rule
+    public TestName testName = new TestName();
 
     @Before
     public void init() {
@@ -76,7 +79,10 @@ public class RepositoriesIntegrationTest {
     @Test
     public void createNewUser() throws Exception {
 
-        User basicUser = createUser();
+        String username = testName.getMethodName();
+        String email = testName.getMethodName() + "@devopsbuddy.com";
+
+        User basicUser = createUser(username, email);
 
         User newlyCreatedUser = userRepository.findOne(basicUser.getId());
         Assert.assertNotNull(newlyCreatedUser);
@@ -93,9 +99,12 @@ public class RepositoriesIntegrationTest {
 
     @Test
     public void testDeleteUser() throws Exception {
-        User basicUser = createUser();
 
-        Assert.assertNotNull(basicUser);
+        String username = testName.getMethodName();
+        String email = testName.getMethodName() + "@devopsbuddy.com";
+
+        User basicUser = createUser(username, email);
+        //Assert.assertNotNull(basicUser);
         LOG.info(basicUser.toString());
         userRepository.delete(basicUser.getId());
     }
@@ -110,11 +119,15 @@ public class RepositoriesIntegrationTest {
         return new Role(rolesEnum);
     }
 
-    private User createUser() {
+    private User createUser(String username, String email) {
+
+
+
+
         Plan basicPlan = createPlan(PlansEnum.BASIC);
         planRepository.save(basicPlan);
 
-        User basicUser = UsersUtils.createBasicUser();
+        User basicUser = UsersUtils.createBasicUser(username, email);
         basicUser.setPlan(basicPlan);
 
         Role basicRole = createRole(RolesEnum.BASIC);
