@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7e233734-e3f1-4e42-9773-db811d99ea93" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/devopsbuddy/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devopsbuddy/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/devopsbuddy/integration/RepositoriesIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/devopsbuddy/integration/RepositoriesIntegrationTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="7e233734-e3f1-4e42-9773-db811d99ea93" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,11 +12,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RepositoriesIntegrationTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RepositoriesIntegrationTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/devopsbuddy/integration/RepositoriesIntegrationTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="98" column="37" selection-start-line="98" selection-start-column="37" selection-end-line="98" selection-end-column="37" />
+            <state relative-caret-position="46">
+              <caret line="100" column="5" lean-forward="true" selection-start-line="100" selection-start-column="5" selection-end-line="100" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3101#3102#0" expanded="true" />
@@ -196,11 +192,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UsersUtils.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UsersUtils.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/devopsbuddy/utils/UsersUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+            <state relative-caret-position="315">
+              <caret line="23" column="40" lean-forward="true" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -708,14 +704,11 @@
       <workItem from="1522212326186" duration="1497000" />
       <workItem from="1522283011342" duration="11647000" />
       <workItem from="1522373499599" duration="1773000" />
-      <workItem from="1522375335914" duration="4829000" />
+      <workItem from="1522375335914" duration="5098000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserServiceIntegrationTest_testCreateNewUser - 2018.03.29 at 19h 41m 39s.xml">
-      <configuration name="UserServiceIntegrationTest.testCreateNewUser" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RepositoriesIntegrationTest - 2018.03.29 at 19h 41m 58s.xml">
       <configuration name="RepositoriesIntegrationTest" configurationId="JUnit" />
     </history-entry>
@@ -743,9 +736,12 @@
     <history-entry file="RepositoriesIntegrationTest - 2018.03.29 at 22h 33m 00s.xml">
       <configuration name="RepositoriesIntegrationTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="RepositoriesIntegrationTest_testDeleteUser - 2018.03.29 at 22h 40m 00s.xml">
+      <configuration name="RepositoriesIntegrationTest.testDeleteUser" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25202000" />
+    <option name="totallyTimeSpent" value="25471000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
@@ -761,7 +757,7 @@
       <window_info anchor="right" id="Maven Projects" order="5" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49930555" visible="true" weight="0.40675846" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49930555" visible="true" weight="0.13266583" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Capture Tool" order="5" />
@@ -1190,13 +1186,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/devopsbuddy/utils/UsersUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/service/UserSecurityService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
@@ -1240,8 +1229,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/devopsbuddy/integration/RepositoriesIntegrationTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="98" column="37" selection-start-line="98" selection-start-column="37" selection-end-line="98" selection-end-column="37" />
+        <state relative-caret-position="46">
+          <caret line="100" column="5" lean-forward="true" selection-start-line="100" selection-start-column="5" selection-end-line="100" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3101#3102#0" expanded="true" />
@@ -1249,6 +1238,13 @@
             <element signature="e#3195#3196#0" expanded="true" />
             <element signature="e#3237#3238#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/devopsbuddy/utils/UsersUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="23" column="40" lean-forward="true" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
         </state>
       </provider>
     </entry>
