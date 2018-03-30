@@ -9,9 +9,7 @@ import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
-/**
- * Created by tedonema on 28/03/2016.
- */
+
 @Entity
 public class Role implements Serializable {
 
@@ -23,12 +21,13 @@ public class Role implements Serializable {
 
     private String name;
 
-//    @OneToMany(mappedBy = "role", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-//    private Set<UserRole> userRoles = new HashSet<>();
+    @OneToMany(mappedBy = "role", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private Set<UserRole> userRoles = new HashSet<>();
 
     public Role() {
 
     }
+
 
     public Role(RolesEnum rolesEnum) {
         this.id = rolesEnum.getId();
@@ -51,13 +50,13 @@ public class Role implements Serializable {
         this.name = name;
     }
 
-//    public Set<UserRole> getUserRoles() {
-//        return userRoles;
-//    }
-//
-//    public void setUserRoles(Set<UserRole> userRoles) {
-//        this.userRoles = userRoles;
-//    }
+    public Set<UserRole> getUserRoles() {
+        return userRoles;
+    }
+
+    public void setUserRoles(Set<UserRole> userRoles) {
+        this.userRoles = userRoles;
+    }
 
     @Override
     public boolean equals(Object o) {
